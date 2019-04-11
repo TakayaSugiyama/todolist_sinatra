@@ -1,0 +1,14 @@
+<h1>MyTodo</h1>
+<ul>
+  <% @comments.each do |comment| %>
+     <li data-id="<%= comment.id %>"> 
+        <%= comment.body %> 
+        <span class= "delete">[✖︎]</span>
+     </li>
+  <% end %>
+</ul>
+
+<form action = "/create" method = "post">  
+  <input type = "text" name = "body">
+  <input type = "submit" value = "Add To Do">
+</form>
