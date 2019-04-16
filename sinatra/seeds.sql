@@ -4,6 +4,3 @@ create table comments (
   body text
 );
 
-insert into comments (body) values ('筋トレ');
-insert into comments (body) values ('ナンパ');
-insert into comments (body) values ('sex');
